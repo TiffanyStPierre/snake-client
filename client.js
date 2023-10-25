@@ -14,6 +14,7 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Successfully connected to game server");
     conn.write("Name: TSP");
+    /*conn.write("Move: up");*/
   });
 
   // handle incoming data from the server and console.log it
