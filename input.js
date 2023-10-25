@@ -3,7 +3,6 @@ let connection;
 
 const handleUserInput = function(key) {
 
-  stdin.on('data', (key) => {
     // \u0003 maps to ctrl+c input
     if (key === '\u0003') {
       process.exit();
@@ -36,7 +35,6 @@ const handleUserInput = function(key) {
     if (key === 'j') {
       connection.write("Say: Watch Out!");
     }
-  });
 };
 
 // setup interface to handle user input from stdin
